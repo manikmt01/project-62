@@ -100,15 +100,12 @@ background-position: center;
 background-repeat: none;
 cursor: pointer;
 }
-.vid img::after{
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-   
-    width: 20px;
-    height: 20px;
-    background-color: red;
+.vid img{
+    opacity: .9;
+    transition: all ease .6s;
+}
+.vid img:hover{
+    opacity: 1;
 }
 .vid div {
  overflow: hidden;
@@ -185,13 +182,13 @@ cursor: pointer;
 .yes-i-wnat {
         margin-bottom: 2.75%;
 }
-.yes-i-wnat img.img1{
+.yes-i-wnat img.img1 {
     width: 539px;
-    margin-bottom: 40px ;
+    margin-bottom: 40px !important;
 }
-.yes-i-wnat img.img2{
+.yes-i-wnat img.img2 {
     width: 192.5px;
-        margin-bottom: 2.75% ;
+    margin-bottom: 2.75% !important;
 }
 .yes-i-wnat h2{
         line-height: 1.1em;
@@ -240,10 +237,11 @@ cursor: pointer;
     line-height: 1.1em;
     margin-bottom: 5px;
 }
-.new-member .top-item p{
+.new-member .top-item p {
     color: #252222;
-        font-size: 20px;
+    font-size: 20px;
     margin-bottom: 10px;
+    font-weight: 400;
 }
 .new-member .top-item h3{
         color: #252222;
@@ -414,7 +412,9 @@ cursor: pointer;
     text-align: center;
     margin-bottom: 2.75%;
 }
-.Today .text_inner{}
+.Today .text_inner{
+
+}
 .Today .text_inner p{}
 .Today .img-box{
         margin: 2.75% 0;
@@ -436,8 +436,43 @@ cursor: pointer;
 }
 /* Place-Smoothies start */
 .Place-Smoothies {}
-.Place-Smoothies .text_inner{}
+.Place-Smoothies .text_inner{
+        margin-bottom: 2.75%;
+}
 .Place-Smoothies .text_inner p{}
-.Place-Smoothies {}
-.Place-Smoothies {}
+.Place-Smoothies .yes-i-wnat.yes-i-wnat2{}
+.Place-Smoothies .yes-i-wnat.yes-i-wnat2 img{}
+.Place-Smoothies .yes-i-wnat.yes-i-wnat2 img:last-child{
+    margin-bottom: 2.75% !important;
+}
+.Place-Smoothies .yes-i-wnat.yes-i-wnat2 img:first-child{
+    margin-bottom: 40px !important;
+}
 /* Place-Smoothies end */
+
+/* footer start */
+footer  {}
+footer  ul{
+    text-align: center;
+}
+footer  ul li{
+    display: inline-block;
+    margin-right: 5px;
+    color: #000000!important;
+        font-weight: 600;
+            font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+            font-size: 14px;
+}
+footer  ul li a{
+color: #000000!important;
+}
+footer  p{
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+}
+footer  {}
+/* footer end */
+
